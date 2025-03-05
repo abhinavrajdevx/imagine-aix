@@ -1,9 +1,13 @@
 import axios from "axios";
+import { getCookie } from "../utils";
 
 export const fetchBooks = async () => {
-  console.log("request sent...");
+  // axios.defaults.withCredentials = true;
+
   try {
-    const res = await axios.get("http://localhost:3004/id/all", {});
+    const res = await axios.post("http://localhost:3004/book/all", {
+      token: getCookie("token"),
+    });
     console.log(res.data);
     return res.data;
   } catch (e) {
