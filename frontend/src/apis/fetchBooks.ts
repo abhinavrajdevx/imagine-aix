@@ -5,7 +5,7 @@ export const fetchBooks = async () => {
   // axios.defaults.withCredentials = true;
 
   try {
-    const res = await axios.post("http://localhost:3004/book/all", {
+    const res = await axios.post("http://142.93.212.130:3004/book/all", {
       token: getCookie("token"),
     });
     console.log(res.data);

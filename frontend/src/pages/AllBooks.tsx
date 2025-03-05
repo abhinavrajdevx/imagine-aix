@@ -76,10 +76,8 @@ function AllBooks() {
     setPreviewBook(null);
   };
 
-  const filteredBooks = books.filter(
-    (book: any) => book
-    // console.log(book.book)
-    // book.book.name.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredBooks = books.filter((book: any) =>
+    book.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (

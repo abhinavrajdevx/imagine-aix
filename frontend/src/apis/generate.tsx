@@ -5,7 +5,7 @@ export const generate = async (user_prompt: string) => {
   // axios.defaults.withCredentials = true;
 
   try {
-    const res = await axios.post("http://localhost:3004/book/generate", {
+    const res = await axios.post("http://142.93.212.130:3004/book/generate", {
       user_prompt,
       token: getCookie("token"),
     });

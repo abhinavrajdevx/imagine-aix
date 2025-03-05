@@ -7,7 +7,7 @@ const Header = () => {
         <Brain className="mr-3 text-book-gold" size={28} />
         <h1 className="text-3xl font-serif font-bold">imagine AiX</h1>
       </div>
-      <div className="w-[300px] justify-end flex items-center gap-6">
+      <div className=" justify-end flex items-center gap-6">
         <button
           onClick={() => {
             window.location.href = "/";
@@ -20,9 +20,17 @@ const Header = () => {
           onClick={() => {
             window.location.href = "/imagine_library";
           }}
-          className="font-serif text-slate-500 hover:text-black"
+          className="w-[120px] font-serif text-slate-500 hover:text-black"
         >
           {"Imagine Library"}
+        </button>
+        <button
+          onClick={() => {
+            window.location.href = "/auth";
+          }}
+          className="font-serif bg-black rounded-lg px-3 py-2 text-white w-[100px]"
+        >
+          {"Login"}
         </button>
       </div>
     </header>
