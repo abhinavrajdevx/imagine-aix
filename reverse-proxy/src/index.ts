@@ -16,10 +16,11 @@ app.use(cors());
 
 app.all("/*", function (req: any, res: any) {
   try {
+    console.log("COntrol reached...");
+    apiProxy.web(req, res, { target: backend });
   } catch (e: any) {
     console.log(e);
   }
-  apiProxy.web(req, res, { target: backend });
 });
 
 var server = require("http").createServer(app);
