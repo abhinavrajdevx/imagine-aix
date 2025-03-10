@@ -11,7 +11,7 @@ interface SignupData extends LoginData {
   email: string;
 }
 
-const API_BASE_URL = "http://142.93.212.130:3004/user"; // Update with your backend URL
+const API_BASE_URL = "http://localhost:3000/user"; // Update with your backend URL
 
 const AuthPage: React.FC = () => {
   // State for managing form type and form data
