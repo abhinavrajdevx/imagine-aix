@@ -11,7 +11,7 @@ interface SignupData extends LoginData {
   email: string;
 }
 
-const API_BASE_URL = "https://server.abhinavraj.tech/imagine-aix/user"; // Update with your backend URL
+const API_BASE_URL = "https://server.abhinavraj.tech/imagine-aix/api/user"; // Update with your backend URL
 
 const AuthPage: React.FC = () => {
   // State for managing form type and form data
