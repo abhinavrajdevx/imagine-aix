@@ -28,8 +28,8 @@ app.listen(PORT, () => {
   console.log(`App running at ${PORT}`);
 });
 
-app.use("/user", userRoutes);
-app.use("/book", bookRoutes);
+app.use("/imagine-aix/api/user", userRoutes);
+app.use("/imagine-aix/api/book", bookRoutes);
 
 // Export models for potential use in other files
 export { User, Book };
