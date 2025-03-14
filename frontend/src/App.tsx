@@ -46,17 +46,7 @@ function App() {
     setExpandedBookId(expandedBookId === id ? null : id);
   };
 
-  return (
-    <div className="inset-0 w-screen h-screen flex  flex-col ">
-      <Header />
-      <div className="flex w-screnn flex-grow items-center justify-center">
-        <Prompt book_prompt={book_prompt} set_book_prompt={set_book_prompt} />
-      </div>
-      <div className="absolute top-40 left-20 w-72 h-72 bg-blue-500/50 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-40 right-20 w-72 h-72 bg-green-500/30 rounded-full blur-3xl"></div>
-      <div className="absolute top-60 right-1/4 w-72 h-72 bg-pink-500/30 rounded-full blur-3xl"></div>
-    </div>
-  );
+  return <Prompt book_prompt={book_prompt} set_book_prompt={set_book_prompt} />;
 }
 
 export default App;
